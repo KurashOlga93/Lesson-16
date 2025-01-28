@@ -15,7 +15,7 @@ public class SampleAppTest {
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.uitestingplayground.com/sampleapp");
         driver.findElement(By.name("UserName")).sendKeys("Olga");
-        driver.findElement(By.name("Password")).sendKeys("pd");
+        driver.findElement(By.name("Password")).sendKeys("pwd");
         driver.findElement(By.xpath("//*[@id=\"login\"]")).click();
 
         String expected = "Welcome, Olga!";
